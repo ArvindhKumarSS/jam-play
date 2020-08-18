@@ -1,9 +1,10 @@
 {
-  "title": "A",
+  "title": "SM-G980FZADEUA",
   "field1": "sku",
   "field2": "delivery_group",
   "displayFields": [
     "sku",
     "delivery_group"
-  ]
+  ],
+  "colour": "red"
 }
