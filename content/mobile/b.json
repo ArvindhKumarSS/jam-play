@@ -1,10 +1,12 @@
 {
-  "title": "SM-G980FZADEUA",
+  "title": "EF-GG965FREGWW",
   "field1": "sku_source",
   "field2": "product_type",
   "displayFields": [
-    "sku_source",
-    "product_type"
+    "product_display_name",
+    "pvi_product_type_code",
+    "pvi_product_type_name",
+    "family_id"
   ],
   "colour": "green"
 }
