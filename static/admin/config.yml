@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: ArvindhKumarSS/jam-play
-  branch: master
+  branch: dev
 
 media_folder: static/img
 public_folder: /img
