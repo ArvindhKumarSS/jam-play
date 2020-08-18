@@ -1,9 +1,11 @@
 <template>
   <div>
-    <h2>{{ mobile.title }}</h2>
+    <h2 v-bind:style="{ color: mobile.colour}"> {{ mobile.title }}</h2>
     <nuxt-content :document="mobile" />
-    <h3> {{field1}}</h3> </br>
-    <h3> {{field2}}</h3>
+     <div v-for="field in mobile.displayFields" :key="field">
+       <h3> {{product[field]}}</h3>
+     </div>
+  
   </div>
 </template>
 
@@ -13,21 +15,17 @@ export default {
   async asyncData({ $content, params, error }) {
     let mobile;
     let data;
-    let field1, field2, product;
+    let product;
     try {
       mobile = await $content("mobile", params.slug).fetch();
-      data = await axios.get("https://www.samsung.com/uk/api/v4/configurator/syndicated-product?sku=SM-G980FZADEUA");
+      data = await axios.get("https://www.samsung.com/uk/api/v4/configurator/syndicated-product?sku="+mobile.title);
       product = data.data.products[0];
-      field1 = product[mobile.field1]
-      field2 = product[mobile.field2]
     } catch (e) {
       error({ message: e });
     }
 
     return {
       mobile,
-      field1,
-      field2,
       product
     };
   },

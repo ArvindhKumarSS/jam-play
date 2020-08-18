@@ -32,3 +32,5 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Field To show first', name: 'field1', widget: 'string' }
       - { label: 'Field To show second', name: 'field2', widget: 'string' }
+      - { label: 'Display Fields', name: 'displayFields', widget: 'list' }
+      - { label: 'Colour', name: 'colour', widget: 'string' }
