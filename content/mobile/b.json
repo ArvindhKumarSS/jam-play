@@ -1,5 +1,9 @@
 {
   "title": "B",
   "field1": "sku_source",
-  "field2": "product_type"
+  "field2": "product_type",
+  "displayFields": [
+    "sku_source",
+    "product_type"
+  ]
 }
