@@ -1,5 +1,9 @@
 {
   "title": "A",
   "field1": "sku",
-  "field2": "delivery_group"
+  "field2": "delivery_group",
+  "displayFields": [
+    "sku",
+    "delivery_group"
+  ]
 }
