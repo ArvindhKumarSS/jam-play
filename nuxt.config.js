@@ -52,6 +52,19 @@ export default {
   modules: [
     '@nuxt/content'
   ],
+
+  generate: {
+    routes: function() {
+      const fs = require('fs');
+      const path = require('path');
+      return fs.readdirSync('./assets/content/mobile').map(file => {
+        return {
+          route: `/smartphones/${path.parse(file).name}`, // Return the slug
+          payload: require(`./assets/content/mobile/${file}`),
+        };
+      });
+    },
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
