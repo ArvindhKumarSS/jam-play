@@ -6,10 +6,12 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "dev-debug": "node --inspect node_modules/.bin/nuxt"
   },
   "dependencies": {
     "@nuxt/content": "^1.6.1",
+    "axios": "^0.19.2",
     "nuxt": "^2.14.0"
   },
   "devDependencies": {}
