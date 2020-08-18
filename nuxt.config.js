@@ -57,10 +57,10 @@ export default {
     routes: function() {
       const fs = require('fs');
       const path = require('path');
-      return fs.readdirSync('./assets/content/mobile').map(file => {
+      return fs.readdirSync('./content/mobile').map(file => {
         return {
           route: `/smartphones/${path.parse(file).name}`, // Return the slug
-          payload: require(`./assets/content/mobile/${file}`),
+          payload: require(`./content/mobile/${file}`),
         };
       });
     },
