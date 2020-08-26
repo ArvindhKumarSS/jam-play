@@ -4,7 +4,8 @@
   "field2": "delivery_group",
   "displayFields": [
     "sku",
-    "delivery_group"
+    "delivery_group",
+    "family_id"
   ],
   "colour": "red"
 }
