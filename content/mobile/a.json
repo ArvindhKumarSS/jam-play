@@ -5,6 +5,7 @@
   "displayFields": [
     "sku",
     "delivery_group",
+    "family_id",
     "family_id"
   ],
   "colour": "red"
